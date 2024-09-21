@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with ISL Translation</title>
+    <link rel="stylesheet" href="../static/stylesheet/style6.css">
+</head>
+<body>
+    <div class="language-selector">
+        <span id="langToggle" onclick="toggleLanguage()">🌐</span>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            ISL and Text Chat
+        </div>
+        <div class="chat-box" id="chatBox">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <div class="input-area">
+            <span class="icon" id="audioToggle" onclick="toggleAudio()">🔊</span>
+            <span class="icon" id="videoToggle" onclick="toggleVideo()">🎥</span>
+            <input type="text" id="messageInput" placeholder="Select a suitable background color for the communication...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        <div class="video-container" id="videoContainer">
+            <video id="islVideo" controls>
+                <source id="videoSource" src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <script src="../static/js/js6.js"></script>
+</body>
+</html>

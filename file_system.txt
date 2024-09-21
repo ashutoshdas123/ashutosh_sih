@@ -1,0 +1,3 @@
+page1 ---------page 2----page3(doctor1)----page4(doctor2)
+	   		   |   	|
+   page5(railways)  page6(meetup)

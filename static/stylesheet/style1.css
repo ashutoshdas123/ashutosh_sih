@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    animation: gradientShift 15s ease infinite;
+    background: linear-gradient(45deg, #ff4b5c, #8e4b52, #a67f3d, #ff4b5c);
+    background-size: 400% 400%;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 100% 50%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    75% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background: linear-gradient(45deg, #ff4b5c, #000);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.side-nav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #ff4b5c, #8e4b52, #a67f3d, #ff4b5c);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    padding-top: 100px;
+    box-shadow: 3px 0 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.side-nav a {
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.side-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(10px);
+}
+
+.section {
+    padding: 100px 50px;
+    margin-left: 260px;
+    text-align: center;
+    background: linear-gradient(to right, #ff4b5c, #8e4b52, #a67f3d, #ff4b5c);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffd700;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.features-list {
+    list-style-type: none;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.features-list li {
+    font-size: 1.2em;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}

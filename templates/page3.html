@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan QR & Chat</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheet/style3.css')}}">
+</head>
+<body>
+    <div class="symbol doctor">👨‍⚕</div>
+    <div class="symbol stethoscope">🩺</div>
+    <div class="symbol stethoscope">🩺</div>
+    <div class="symbol stethoscope">🩺</div>
+    <div class="symbol stethoscope">🩺</div>
+    <div class="symbol stethoscope">🩺</div>
+    <div class="symbol stethoscope">🩺</div>
+
+    <div class="container">
+        <h1>Scan the QR Code</h1>
+        <p>Scan the code below to get started:</p>
+        <div class="qr-code">
+            <img id="qrCodeImage" src="https://via.placeholder.com/150?text=QR+Code" alt="QR Code" style="max-width: 100%; height: auto;">
+        </div>
+        <p>Or click the link below to chat with our chatbot:</p>
+        <a href="{{ url_for('page4') }}" class="link">Click Here to Chat</a>
+    </div>
+    <script src="{{url_for('static', filename='js/js3.js')}}"></script>
+</body>
+</html>

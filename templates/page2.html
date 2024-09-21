@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Help</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheet/style2.css')}}">
+</head>
+
+<body>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+
+    <div class="chat-container">
+        <div class="message bot" id="botMessage1">
+            <div class="message-box">Do you want any help?<br>Reply in YES or NO</div>
+        </div>
+
+        <div id="chatMessages"></div>
+
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Type your message here..." />
+            <button onclick="handleUserInput()">Send</button>
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='js/js2.js')}}"></script>
+</body>
+
+</html>

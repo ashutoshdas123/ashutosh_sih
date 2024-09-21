@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISL NEXUS</title>
+    
+    <!-- Link the CSS file properly using Flask's url_for -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet/style1.css') }}">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Use Flask's url_for to reference static images -->
+        <img src="{{ url_for('static', filename='images/WhatsApp_Image_2024-09-17_at_12.27.50_d39e4ebb.jpg') }}" alt="Logo">
+        <h1>ISL NEXUS</h1>
+    </header>
+
+    <!-- Side Navigation -->
+    <div class="side-nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services & Features</a>
+        <a href="#contact">Contact</a>
+        <a href="#start">Start a Conversation</a>
+        <a href="#howto">How to Use It</a>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" class="section">
+        <h2>Welcome to ISL NEXUS</h2>
+        <p>Translate spoken or written English/Hindi into Indian Sign Language (ISL) gestures in real time! Use this platform to enhance communication and promote inclusivity for the deaf community.</p>
+        <!-- Corrected the link with url_for -->
+        <a href="{{ url_for('page2') }}" id="first" class="btn">Start Translating</a>
+    </div>
+
+    <!-- Services & Features Section -->
+    <div id="services" class="section">
+        <h2>Our Services and Features</h2>
+        <p>We offer real-time translation from English/Hindi to Indian Sign Language and vice versa. Our platform is powered by AI technology and a 3D avatar for immersive, human-like sign language translation. Key features include:</p>
+        <ul class="features-list">
+            <li>Real-time translation of audio, text, and video.</li>
+            <li>Multi-platform support for desktop and mobile devices.</li>
+            <li>Interactive 3D avatar performing ISL gestures.</li>
+            <li>User-friendly interface with audio/video input controls.</li>
+            <li>Customizable settings for language preferences.</li>
+        </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+        <h2>Contact Us and Start a Conversation</h2>
+        <p>Reach out for any questions or start a conversation with our real-time ISL translator.</p>
+        <!-- Corrected the link with url_for -->
+        <a href="{{ url_for('page2') }}" id="second" class="btn">Get Started</a>
+    </div>
+
+    <!-- Start a Conversation Section -->
+    <div id="start" class="section">
+        <h2>Start a Conversation</h2>
+        <p>Engage with our ISL translator to see how it works and how it can assist you in real-time translation.</p>
+        <!-- Fixed the button ID to match your JS -->
+        <a href="{{ url_for('page2') }}" id="third" class="btn">Start Now</a>
+    </div>
+
+    <!-- How to Use It Section -->
+    <div id="howto" class="section">
+        <h2>How to Use It</h2>
+        <p>Our platform is designed to be intuitive. Follow these simple steps:</p>
+        <ul class="features-list">
+            <li>Select your input method: audio, text, or video.</li>
+            <li>Enter or speak your message.</li>
+            <li>Watch as the message is translated into ISL by our 3D avatar.</li>
+            <li>Adjust settings as needed for language preferences.</li>
+        </ul>
+    </div>
+
+    <footer>
+        &copy; 2024 ISL NEXUS. All rights reserved.
+    </footer>
+
+    <!-- Correct JS file linking with url_for -->
+    <script src="{{ url_for('static', filename='js/js1.js') }}"></script>
+</body>
+</html>
